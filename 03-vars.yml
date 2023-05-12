@@ -7,8 +7,6 @@
       ansible.builtin.debug:
         msg: URL - {{ URL }}
 
-# In Ansible variable will be accessed using {{ }} ,
-
 
 - name: Load vars from a file
   hosts: all
@@ -19,8 +17,6 @@
       ansible.builtin.debug:
         msg: URL - {{ URL }}
 
-# vars_files does not support task level, it is for play level only
-
 - name: Demo on Task Level Variables
   hosts: all
   tasks:
@@ -30,7 +26,6 @@
       vars:
         URL: tasks.example.com
 
-# Only that task have that variable, other tasks cannot access it.
 
 - name: Variable from Roles
   hosts: all
