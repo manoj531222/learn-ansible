@@ -15,3 +15,12 @@
         msg: url = {{ URL }}
       vars:
         URL: example.com
+
+- name: demo for file xvars
+  hosts: all
+  vars_files:
+    - exvars.yml
+  tasks:
+    - name: print url
+      ansible.builtin.debug:
+        msg: url = {{ URL }}
