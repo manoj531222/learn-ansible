@@ -1,4 +1,4 @@
-- name: demo on roles
+- name: demo on first playbook
   hosts: all
-  roles:
+  tasks:
     - sample

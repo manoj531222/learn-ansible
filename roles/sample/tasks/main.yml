@@ -1,7 +1,3 @@
 - name: print hello world
   ansible.builtin.debug:
     msg: hello from sample role
-
-- name: print message
-  ansible.builtin.debug:
-    msg: hello manoj this your first play
