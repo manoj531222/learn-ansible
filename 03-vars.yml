@@ -10,8 +10,8 @@
 - name: Demo on Task Level Variables
   hosts: all
   tasks:
-    - name: Print URL
+    - name: Print url
       ansible.builtin.debug:
-        msg: URL - {{ URL }}
+        msg: url - {{ URL }}
       vars:
-        URL: tasks.example.com
+        URL: example.com
