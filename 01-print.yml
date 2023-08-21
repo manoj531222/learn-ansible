@@ -1,5 +1,5 @@
 - name: my first playbook
   hosts: all
-  tasks:
+  roles:
     - sample
 
