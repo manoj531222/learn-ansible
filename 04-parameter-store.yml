@@ -1,0 +1,6 @@
+- name: print parameter
+  hosts: all
+  tasks:
+    - name: print parameter
+      ansible.builtin.debug:
+        msg="{{ lookup('test.test', region='us-east-1' ) }}"
